@@ -2,11 +2,21 @@ const express = require('express');
 const server = express();
  
 server.all('/', (req, res) => {
-  res.send(`Bot online, now please copy the link above and paste it in uptimerobot to make this bot 24/7 working!`)
+  res.send(`
+          ██████╗░██╗░░░██╗░██████╗██╗░░██╗██╗░░██╗░█████╗░██████╗░
+          ██╔══██╗██║░░░██║██╔════╝██║░░██║██║░██╔╝██╔══██╗██╔══██╗
+          ██████╔╝██║░░░██║╚█████╗░███████║█████═╝░███████║██████╔╝
+          ██╔═══╝░██║░░░██║░╚═══██╗██╔══██║██╔═██╗░██╔══██║██╔══██╗
+          ██║░░░░░╚██████╔╝██████╔╝██║░░██║██║░╚██╗██║░░██║██║░░██║
+          ╚═╝░░░░░░╚═════╝░╚═════╝░╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░╚═╝
+          Made By Pushkar
+          discord.gg/magicgames
+          If You Are Using Replit, You Can Copy Website Link And Put It Into Uptimerobot Website To Make This Bot 24/7 Working!
+         `)
 })
  
 function keepAlive() {
-  server.listen(3000, () => { console.log("Server is Ready!!" + Date.now()) });
+  server.listen(3000, () => { console.log("Bot and Website is Ready!!" + Date.now()) });
 }
  
 module.exports = keepAlive;
